@@ -1,10 +1,9 @@
 {
-	"variables": [],
 	"info": {
 		"name": "httpbin.org copy",
 		"_postman_id": "944b478d-842c-0a12-b3a4-e2e08561ed9e",
 		"description": "",
-		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
 		{
@@ -30,7 +29,17 @@
 				"method": "GET",
 				"header": [],
 				"body": {},
-				"url": "https://httpbin.org/ip",
+				"url": {
+					"raw": "https://httpbin.org/ip",
+					"protocol": "https",
+					"host": [
+						"httpbin",
+						"org"
+					],
+					"path": [
+						"ip"
+					]
+				},
 				"description": null
 			},
 			"response": []
@@ -63,7 +72,17 @@
 					}
 				],
 				"body": {},
-				"url": "https://httpbin.org/get",
+				"url": {
+					"raw": "https://httpbin.org/get",
+					"protocol": "https",
+					"host": [
+						"httpbin",
+						"org"
+					],
+					"path": [
+						"get"
+					]
+				},
 				"description": "get - method"
 			},
 			"response": []
