@@ -1,0 +1,91 @@
+{
+	"info": {
+		"name": "httpbin.org copy",
+		"_postman_id": "944b478d-842c-0a12-b3a4-e2e08561ed9e",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://httpbin.org/ip",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"194.183.179.230\");",
+							"});",
+							"",
+							"pm.test(\"Successful POST request\", function () {",
+							"    pm.expect(pm.response.code).to.be.oneOf([200]);",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://httpbin.org/ip",
+					"protocol": "https",
+					"host": [
+						"httpbin",
+						"org"
+					],
+					"path": [
+						"ip"
+					]
+				},
+				"description": null
+			},
+			"response": []
+		},
+		{
+			"name": "https://httpbin.org/get",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"Alex\");",
+							"});",
+							"",
+							"pm.test(\"Successful POST request\", function () {",
+							"    pm.expect(pm.response.code).to.be.oneOf([200]);",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "name",
+						"value": "Alex"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "https://httpbin.org/get",
+					"protocol": "https",
+					"host": [
+						"httpbin",
+						"org"
+					],
+					"path": [
+						"get"
+					]
+				},
+				"description": "get - method"
+			},
+			"response": []
+		}
+	]
+}
