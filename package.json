@@ -6,7 +6,7 @@
     "test": "test"
   },
   "scripts": {
-    "api-tests-production": "newman run tests/httpbin.org.postman_collection.json"
+    "api-tests-production": "newman run test/httpbin.org.postman_collection.json"
   },
   "author": "Alex",
   "license": "ISC",
