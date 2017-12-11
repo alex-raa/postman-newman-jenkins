@@ -8,7 +8,7 @@
   "scripts": {
     "api-tests-production": "newman run test/httpbin.org.postman_collection.json --reporters cli,junit --reporter-junit-export newman.xml"
   },
-  "author": "Alex",
+  "author": "Alex1",
   "license": "ISC",
   "dependencies": {
     "newman": "^3.8.3"

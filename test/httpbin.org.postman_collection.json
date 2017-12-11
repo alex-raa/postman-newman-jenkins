@@ -53,7 +53,7 @@
 						"type": "text/javascript",
 						"exec": [
 							"pm.test(\"Body matches string\", function () {",
-							"    pm.expect(pm.response.text()).to.include(\"Alex\");",
+							"    pm.expect(pm.response.text()).to.include(\"Alex1\");",
 							"});",
 							"",
 							"pm.test(\"Successful POST request\", function () {",
@@ -68,7 +68,7 @@
 				"header": [
 					{
 						"key": "name",
-						"value": "Alex"
+						"value": "Alex1"
 					}
 				],
 				"body": {},
